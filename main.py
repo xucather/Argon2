@@ -3,6 +3,11 @@
 #- Store the password in text file 
 #- Comma separated like (hashed value, salt value)
 
+def store_pass(hash_value,salt_value):
+    with open("passwordstorage.txt", "a") as text_file:
+        text_file.write("%s %s\n" % (hash_value, salt_value))
+
+store_pass("hash","salt")
 
 #- Authenticate that the password can be retrieved
 #- Verification
