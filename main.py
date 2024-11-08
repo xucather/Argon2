@@ -2,10 +2,6 @@ import argon2
 from argon2 import PasswordHasher
 
 
-import argon2
-from argon2 import PasswordHasher
-
-
 #inital
 
 # Class for all the functions
