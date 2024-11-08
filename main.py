@@ -41,7 +41,7 @@ class Argon2Password:
         with open("passwordstorage.txt", "a") as text_file:
             text_file.write("%s,%s,%s" % (hash_value, salt_value,username))
 
-        # Reads from the text file for to match the Hash,Salt and Username
+        # Reads from the text file to match the Hash,Salt and Username
     def read_pass(hash_value,salt_value,username):
         with open("passwordstorage.txt", "r") as file:
             for line in file:
